@@ -1,0 +1,10 @@
+C:\dev\sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.csprojResolveAssemblyReference.cache
+C:\dev\sandpit\Fixie\Second\Fixie\Fixie.Domain\bin\Debug\Fixie.Domain.dll
+C:\dev\sandpit\Fixie\Second\Fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
+C:\dev\sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.dll
+C:\dev\sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.pdb
+C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\bin\Debug\Fixie.Domain.dll
+C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
+C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.csprojResolveAssemblyReference.cache
+C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.dll
+C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.pdb
