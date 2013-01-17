@@ -7,9 +7,9 @@ namespace Fixie.Domain
     public class Board : IEntity
     {
         public int Id { get; set; }
-        public DateTime Created { get; set; }
+        public DateTime? Created { get; set; }
         public int CreatedBy { get; set; }
-        public DateTime Modified { get; set; }
+        public DateTime? Modified { get; set; }
         public int ModifiedBy { get; set; }
 
         public Board()

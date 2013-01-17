@@ -8,3 +8,8 @@ C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
 C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.csprojResolveAssemblyReference.cache
 C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.dll
 C:\Sandpit\Fixie\Second\Fixie\Fixie.Domain\obj\Debug\Fixie.Domain.pdb
+C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.csprojResolveAssemblyReference.cache
+C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.dll
+C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.pdb
+C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.dll
+C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
