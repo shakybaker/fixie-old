@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace Fixie
+namespace Fixie.Content.App_Start
 {
     public class BundleConfig
     {

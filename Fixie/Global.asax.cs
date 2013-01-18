@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Routing;
+using Fixie.Content.App_Start;
 using Microsoft.AspNet.SignalR;
 
 namespace Fixie
