@@ -137,6 +137,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Facades\FixieApiService.cs" />
+    <Compile Include="Code\Facades\IFixieApiService.cs" />
     <Compile Include="Content\App_Start\BundleConfig.cs" />
     <Compile Include="Content\App_Start\FilterConfig.cs" />
     <Compile Include="Content\App_Start\RouteConfig.cs" />

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
+using Fixie.Code.Facades;
 using Fixie.Domain;
 using Fixie.Models;
 
@@ -7,6 +8,12 @@ namespace Fixie.Controllers
 {
     public class BoardController : Controller
     {
+        private readonly IFixieApiService _fixieApiService;
+
+        public BoardController(IFixieApiService fixieApiService)
+        {
+            _fixieApiService = fixieApiService;
+        }
 
         public ActionResult Index()
         {
