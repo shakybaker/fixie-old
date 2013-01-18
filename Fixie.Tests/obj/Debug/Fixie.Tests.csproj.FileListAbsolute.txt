@@ -25,3 +25,15 @@ C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Tests\bin\Debug\nunit.framework
 C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Tests\obj\Debug\Fixie.Tests.csprojResolveAssemblyReference.cache
 C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Tests\obj\Debug\Fixie.Tests.dll
 C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Tests\obj\Debug\Fixie.Tests.pdb
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\Fixie.Tests.dll
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\Fixie.Tests.pdb
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\Fixie.Domain.dll
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\Ninject.dll
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\nunit.framework.dll
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\Fixie.Domain.pdb
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\Ninject.pdb
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\Ninject.xml
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\nunit.framework.xml
+C:\dev\github\fixie\Fixie.Tests\obj\Debug\Fixie.Tests.csprojResolveAssemblyReference.cache
+C:\dev\github\fixie\Fixie.Tests\obj\Debug\Fixie.Tests.dll
+C:\dev\github\fixie\Fixie.Tests\obj\Debug\Fixie.Tests.pdb

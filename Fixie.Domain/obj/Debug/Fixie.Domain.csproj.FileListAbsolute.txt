@@ -13,3 +13,11 @@ C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.d
 C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.pdb
 C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.dll
 C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
+C:\dev\github\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.dll
+C:\dev\github\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
+C:\dev\github\fixie\Fixie.Domain\bin\Debug\Ninject.dll
+C:\dev\github\fixie\Fixie.Domain\bin\Debug\Ninject.pdb
+C:\dev\github\fixie\Fixie.Domain\bin\Debug\Ninject.xml
+C:\dev\github\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.csprojResolveAssemblyReference.cache
+C:\dev\github\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.dll
+C:\dev\github\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.pdb
