@@ -1,0 +1,68 @@
+@model Fixie.Domain.User
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Created)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Created)
+    @Html.ValidationMessageFor(model => model.Created)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.CreatedBy)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.CreatedBy)
+    @Html.ValidationMessageFor(model => model.CreatedBy)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Modified)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Modified)
+    @Html.ValidationMessageFor(model => model.Modified)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ModifiedBy)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ModifiedBy)
+    @Html.ValidationMessageFor(model => model.ModifiedBy)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Username)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Username)
+    @Html.ValidationMessageFor(model => model.Username)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Forename)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Forename)
+    @Html.ValidationMessageFor(model => model.Forename)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Surname)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Surname)
+    @Html.ValidationMessageFor(model => model.Surname)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Email)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+</div>
+

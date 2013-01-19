@@ -1,22 +1,21 @@
 using System.Collections.Generic;
 using Fixie.Domain;
 using Fixie.Domain.Enumerators;
+using Fixie.Models;
 
 namespace Fixie.Migrations
 {
     using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Fixie.Models.FixieContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<FixieContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Fixie.Models.FixieContext context)
+        protected override void Seed(FixieContext context)
         {
             var card = new Card
                 {
@@ -45,6 +44,7 @@ namespace Fixie.Migrations
                                             Forename = "Mark",
                                             Surname = "Baker",
                                             Email = "shakybaker@gmail.com",
+                                            Password = "aaaaaaa",
                                             Created = DateTime.Now,
                                             CreatedBy = 1,
                                             Modified = DateTime.Now,

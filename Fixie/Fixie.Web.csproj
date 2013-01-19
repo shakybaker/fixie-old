@@ -146,6 +146,7 @@
     <Compile Include="App_Start\StructuremapMvc.cs" />
     <Compile Include="Code\Facades\FixieApiService.cs" />
     <Compile Include="Code\Facades\IFixieApiService.cs" />
+    <Compile Include="Code\Helpers\Utilities.cs" />
     <Compile Include="Code\Infrastructure\ContainerBootstrap.cs" />
     <Compile Include="Code\Repository\CardRepository.cs" />
     <Compile Include="Code\Repository\ICardRepository.cs" />
@@ -153,10 +154,11 @@
     <Compile Include="Content\App_Start\FilterConfig.cs" />
     <Compile Include="Content\App_Start\RouteConfig.cs" />
     <Compile Include="Content\App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\BoardsController.cs" />
+    <Compile Include="Controllers\BoardController.cs" />
     <Compile Include="Controllers\CardApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SandpitController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />
@@ -177,11 +179,13 @@
     <Compile Include="Migrations\201301191459202_AddBoardSeed.Designer.cs">
       <DependentUpon>201301191459202_AddBoardSeed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201301191821140_AddUserDetails.cs" />
+    <Compile Include="Migrations\201301191821140_AddUserDetails.Designer.cs">
+      <DependentUpon>201301191821140_AddUserDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\BoardRepository.cs" />
     <Compile Include="Models\BoardViewModel.cs" />
     <Compile Include="Models\FixieContext.cs" />
-    <Compile Include="Models\FixieWebContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -304,6 +308,14 @@
     <Content Include="Views\Boards\Details.cshtml" />
     <Content Include="Views\Boards\Index.cshtml" />
     <Content Include="Views\Boards\_CreateOrEdit.cshtml" />
+    <Content Include="Views\Board\Index.cshtml" />
+    <Content Include="Views\User\Create.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\Delete.cshtml" />
+    <Content Include="Views\User\Details.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\_CreateOrEdit.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -326,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201301191459202_AddBoardSeed.resx">
       <DependentUpon>201301191459202_AddBoardSeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301191821140_AddUserDetails.resx">
+      <DependentUpon>201301191821140_AddUserDetails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
