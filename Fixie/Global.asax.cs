@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Routing;
+using Fixie.Code.Infrastructure;
 using Fixie.Content.App_Start;
 using Microsoft.AspNet.SignalR;
 
@@ -23,6 +24,7 @@ namespace Fixie
             RouteTable.Routes.MapHubs(); 
             
             AreaRegistration.RegisterAllAreas();
+            ContainerBootstrap.Bootstrap();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

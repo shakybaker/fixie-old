@@ -1,0 +1,50 @@
+@model Fixie.Domain.Board
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Board</legend>
+
+    <div class="display-label">Created</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Created)</div>
+
+    <div class="display-label">CreatedBy</div>
+    <div class="display-field">@Model.CreatedBy</div>
+
+    <div class="display-label">Modified</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Modified)</div>
+
+    <div class="display-label">ModifiedBy</div>
+    <div class="display-field">@Model.ModifiedBy</div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Description</div>
+    <div class="display-field">@Model.Description</div>
+
+    <div class="display-label">Type</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.Type).ToString()</div>
+
+    <div class="display-label">Lanes</div>
+    <div class="display-field">@(Model.Lanes == null ? "None" : Model.Lanes.Count.ToString())</div>
+
+    <div class="display-label">PriorityLevelTemplate</div>
+    <div class="display-field">@(Model.PriorityLevelTemplate == null ? "None" : Model.PriorityLevelTemplate.Name)</div>
+
+    <div class="display-label">ComplexityLevelTemplate</div>
+    <div class="display-field">@(Model.ComplexityLevelTemplate == null ? "None" : Model.ComplexityLevelTemplate.Name)</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

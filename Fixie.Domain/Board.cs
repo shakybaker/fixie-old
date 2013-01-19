@@ -24,6 +24,8 @@ namespace Fixie.Domain
             CreatedBy = createdBy;
         }
 
+        public string Name { get; set; }
+        public string Description { get; set; }
         public BoardType Type { get; set; }
         public IList<Lane> Lanes { get; set; }
         public PriorityLevelTemplate PriorityLevelTemplate { get; set; }

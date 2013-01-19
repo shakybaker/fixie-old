@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+using Fixie.Domain;
+using Fixie.Domain.Enumerators;
+
 namespace Fixie.Migrations
 {
     using System;
@@ -14,18 +18,65 @@ namespace Fixie.Migrations
 
         protected override void Seed(Fixie.Models.FixieContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            var card = new Card
+                {
+                    Id = 1,
+                    Name = "Test Card 1 Name",
+                    Description = "This is the description",
+                    Created = DateTime.Now,
+                    CreatedBy = 1,
+                    Modified = DateTime.Now,
+                    ModifiedBy = 1,
+                    Priority = new PriorityLevel
+                        {
+                            Id = 1,
+                            Name = "High",
+                            Sequence = 1
+                        },
+                    UserLinks = new List<UserLink>
+                        {
+                            new UserLink
+                                {
+                                    LinkType = UserLinkType.Creator,
+                                    User = new User
+                                        {
+                                            Id = 1,
+                                            Username = "shakybaker",
+                                            Forename = "Mark",
+                                            Surname = "Baker",
+                                            Email = "shakybaker@gmail.com",
+                                            Created = DateTime.Now,
+                                            CreatedBy = 1,
+                                            Modified = DateTime.Now,
+                                            ModifiedBy = 1
+                                        }
+                                }
+                        }
+                };
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            //context.Cards.AddOrUpdate(a => a.Name, card);
+
+            context.Boards.AddOrUpdate(a => a.Name, 
+                new Board
+                {
+                    Id = 1,
+                    Name = "Test Board 1",
+                    Description = "Description of test board 1",
+                    Lanes = new List<Lane>
+                    {
+                        new Lane
+                        {
+                            Id = 1,
+                            Name = "Lane 1",
+                            Sequence = 1,
+                            Cards = new List<Card>
+                            {
+                                card
+                            }
+                        }
+                    }
+                }
+            );
         }
     }
 }
