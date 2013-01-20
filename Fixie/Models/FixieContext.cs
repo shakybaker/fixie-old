@@ -21,6 +21,7 @@ namespace Fixie.Models
         public DbSet<Card> Cards { get; set; }
         public DbSet<Board> Boards { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Project> Projects { get; set; }
 
     }
 }
