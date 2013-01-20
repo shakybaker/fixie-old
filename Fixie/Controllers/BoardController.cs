@@ -26,6 +26,18 @@ namespace Fixie.Controllers
             var cards = _cardRepository.GetAll();
         }
 
+        [HttpGet]
+        public ActionResult Add()
+        {
+            return View("Add");
+        }
+
+        [HttpPost]
+        public ActionResult Add(Board board)
+        {
+            return View("Add");
+        }
+
         private static BoardViewModel CreateBoardViewModel()
         {
             var model = new BoardViewModel();

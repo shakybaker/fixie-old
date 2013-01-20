@@ -102,6 +102,28 @@ namespace Fixie.Tests
         }
 
         [Test]
+        public void Can_add_a_lane_to_a_lane_template()
+        {
+            var sut = new LaneTemplate();
+            var lane = new Lane();
+
+            sut.Lanes.Add(lane);
+
+            Assert.AreEqual(1, sut.Lanes.Count);
+        }
+
+        [Test]
+        public void Can_assign_a_lane_template_to_a_board()
+        {
+            var sut = new Board();
+            var template = new LaneTemplate { Id = 1, Name = "Default" };
+
+            sut.LaneTemplate = template;
+
+            Assert.AreEqual("Default", sut.LaneTemplate.Name);
+        }
+
+       [Test]
         public void Can_add_a_priority_level_to_a_priority_level_template()
         {
             var sut = new PriorityLevelTemplate();

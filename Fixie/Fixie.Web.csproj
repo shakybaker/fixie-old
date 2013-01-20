@@ -156,7 +156,9 @@
     <Compile Include="Content\App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BoardController.cs" />
     <Compile Include="Controllers\CardApiController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\SandpitController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -183,8 +185,22 @@
     <Compile Include="Migrations\201301191821140_AddUserDetails.Designer.cs">
       <DependentUpon>201301191821140_AddUserDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201301200927503_ChangeUserName.cs" />
+    <Compile Include="Migrations\201301200927503_ChangeUserName.Designer.cs">
+      <DependentUpon>201301200927503_ChangeUserName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201301200934149_AddProjects.cs" />
+    <Compile Include="Migrations\201301200934149_AddProjects.Designer.cs">
+      <DependentUpon>201301200934149_AddProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201301200944046_AddLaneTemplate.cs" />
+    <Compile Include="Migrations\201301200944046_AddLaneTemplate.Designer.cs">
+      <DependentUpon>201301200944046_AddLaneTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BoardViewModel.cs" />
+    <Compile Include="Models\FixieWebContext.cs" />
+    <Compile Include="Models\SignupViewModel.cs" />
     <Compile Include="Models\FixieContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -316,6 +332,14 @@
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\_CreateOrEdit.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Signup.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Projects\Create.cshtml" />
+    <Content Include="Views\Projects\Edit.cshtml" />
+    <Content Include="Views\Projects\Delete.cshtml" />
+    <Content Include="Views\Projects\Details.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
+    <Content Include="Views\Projects\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -341,6 +365,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201301191821140_AddUserDetails.resx">
       <DependentUpon>201301191821140_AddUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301200927503_ChangeUserName.resx">
+      <DependentUpon>201301200927503_ChangeUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301200934149_AddProjects.resx">
+      <DependentUpon>201301200934149_AddProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301200944046_AddLaneTemplate.resx">
+      <DependentUpon>201301200944046_AddLaneTemplate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

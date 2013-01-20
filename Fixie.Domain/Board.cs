@@ -28,6 +28,7 @@ namespace Fixie.Domain
         public string Description { get; set; }
         public BoardType Type { get; set; }
         public IList<Lane> Lanes { get; set; }
+        public LaneTemplate LaneTemplate { get; set; }
         public PriorityLevelTemplate PriorityLevelTemplate { get; set; }
         public ComplexityLevelTemplate ComplexityLevelTemplate { get; set; }
     }

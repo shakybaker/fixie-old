@@ -1,0 +1,36 @@
+﻿@model Fixie.Models.SignupViewModel
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Signup failed. Check your details.");
+    <div>
+        <fieldset>
+            <legend>Signup</legend>
+            <div class="editor-label">
+                @Html.LabelFor(u => u.Name)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(u => u.Name)
+                @Html.ValidationMessageFor(u => u.Name)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(u => u.Email)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(u => u.Email)
+                @Html.ValidationMessageFor(u => u.Email)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(u => u.Password)
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(u => u.Password)
+                @Html.ValidationMessageFor(u => u.Password)
+            </div>
+            <input type="submit" value="Signup" />
+        </fieldset>
+    </div>
+}

@@ -1,3 +1,4 @@
+using System;
 using System.Data;
 using System.Linq;
 using System.Web.Mvc;
@@ -29,8 +30,8 @@ namespace Fixie.Controllers
 
                 if (user != null)
                 {
-                    FormsAuthentication.SetAuthCookie(user.Username, user.RememberMe);
-                    return RedirectToAction("Index", "Board");
+                    FormsAuthentication.SetAuthCookie(user.Id.ToString(), user.RememberMe);
+                    return RedirectToAction("Index", "Dashboard");
                 }
                 else
                 {
@@ -68,7 +69,7 @@ namespace Fixie.Controllers
         public ActionResult Create()
         {
             return View();
-        } 
+        }
 
         //
         // POST: /User/Create
@@ -76,16 +77,54 @@ namespace Fixie.Controllers
         [HttpPost]
         public ActionResult Create(User user)
         {
+            //TODO: check email deosnt exist already
             if (ModelState.IsValid)
             {
                 context.Users.Add(user);
                 context.SaveChanges();
-                return RedirectToAction("Index");  
+                
+                return RedirectToAction("Index");
             }
 
             return View(user);
         }
-        
+
+        //
+        // GET: /User/Signup
+
+        public ActionResult Signup()
+        {
+            return View();
+        }
+
+        //
+        // POST: /User/Signup
+
+        [HttpPost]
+        public ActionResult Signup(SignupViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new User
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Password = model.Password, //TODO: Hash this
+                    Created = DateTime.Now,
+                    Modified = DateTime.Now
+                };
+                context.Users.Add(user);
+                context.SaveChanges();
+
+                var newUser = context.Users.SingleOrDefault(x => x.Email == user.Email && x.Password == model.Password);
+                if (newUser != null) FormsAuthentication.SetAuthCookie(newUser.Id.ToString(), user.RememberMe);
+
+                return RedirectToAction("Index", "Dashboard");
+            }
+
+            return View(model);
+        }
+
         //
         // GET: /User/Edit/5
  
