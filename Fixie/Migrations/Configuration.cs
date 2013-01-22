@@ -1,21 +1,19 @@
-using System.Collections.Generic;
-using Fixie.Domain;
-using Fixie.Domain.Enumerators;
 using Fixie.Models;
 
 namespace Fixie.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<FixieContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<FixieWebContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
+            
         }
 
-        protected override void Seed(FixieContext context)
+        protected override void Seed(FixieWebContext context)
         {
             //var card = new Card
             //    {

@@ -14,6 +14,7 @@ namespace Fixie.Domain
         public Project()
         {
             Boards = new List<Board>();
+            Releases = new List<Release>();
         }
 
         public Project(int createdBy) : this()
@@ -24,5 +25,6 @@ namespace Fixie.Domain
         public string Name { get; set; }
         public string Description { get; set; }
         public IList<Board> Boards { get; set; }
+        public IList<Release> Releases { get; set; }
     }
 }

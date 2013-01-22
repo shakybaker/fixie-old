@@ -50,3 +50,5 @@ C:\dev\github\fixie\Fixie.Tests\bin\Debug\StructureMap.xml
 C:\dev\github\fixie\Fixie.Tests\bin\Debug\System.Net.Http.Formatting.xml
 C:\dev\github\fixie\Fixie.Tests\bin\Debug\System.Web.Http.xml
 C:\dev\github\fixie\Fixie.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+C:\dev\github\fixie\Fixie.Tests\bin\Debug\DotNetOpenAuth.Core.xml

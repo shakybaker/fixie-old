@@ -382,5 +382,35 @@ namespace Fixie.Tests
 
             Assert.AreEqual(1, sut.CreatedBy);
         }
+
+        [Test]
+        public void Can_add_a_release()
+        {
+            var sut = new Release();
+
+            Assert.IsNotNull(sut);
+        }
+
+        [Test]
+        public void Can_assign_a_board_to_a_release()
+        {
+            var sut = new Release();
+            var board = new Board();
+
+            sut.Boards.Add(board);
+
+            Assert.AreEqual(1, sut.Boards.Count);
+        }
+
+        [Test]
+        public void Can_assign_a_release_to_a_project()
+        {
+            var sut = new Project();
+            var release = new Release();
+
+            sut.Releases.Add(release);
+
+            Assert.AreEqual(1, sut.Releases.Count);
+        }
     }
 }

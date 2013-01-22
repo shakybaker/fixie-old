@@ -12,7 +12,7 @@ namespace Fixie.Controllers
 {   
     public class ProjectsController : Controller
     {
-        private FixieContext context = new FixieContext();
+        private FixieWebContext context = new FixieWebContext();
 
         //
         // GET: /Projects/

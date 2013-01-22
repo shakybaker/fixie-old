@@ -39,6 +39,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNetOpenAuth.AspNet">
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId">
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty">
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Core">
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.1.0.0-rc1\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
@@ -161,6 +180,7 @@
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\ReleasesController.cs" />
     <Compile Include="Controllers\SandpitController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -202,7 +222,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BoardViewModel.cs" />
     <Compile Include="Models\SignupViewModel.cs" />
-    <Compile Include="Models\FixieContext.cs" />
+    <Compile Include="Models\FixieWebContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -341,6 +361,12 @@
     <Content Include="Views\Projects\Details.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Projects\_CreateOrEdit.cshtml" />
+    <Content Include="Views\Releases\Create.cshtml" />
+    <Content Include="Views\Releases\Edit.cshtml" />
+    <Content Include="Views\Releases\Delete.cshtml" />
+    <Content Include="Views\Releases\Details.cshtml" />
+    <Content Include="Views\Releases\Index.cshtml" />
+    <Content Include="Views\Releases\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

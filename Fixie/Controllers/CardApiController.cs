@@ -13,7 +13,7 @@ namespace Fixie.Controllers
 {
     public class CardApiController : ApiController
     {
-        private FixieContext db = new FixieContext();
+        private FixieWebContext db = new FixieWebContext();
 
         // GET api/CardApi
         public IEnumerable<Card> GetCards()

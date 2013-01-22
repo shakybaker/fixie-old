@@ -10,7 +10,7 @@ namespace Fixie.Controllers
 {   
     public class UserController : Controller
     {
-        private FixieContext context = new FixieContext();
+        private FixieWebContext context = new FixieWebContext();
 
         //
 

@@ -3,7 +3,7 @@ using Fixie.Domain;
 
 namespace Fixie.Models
 {
-    public class FixieContext : DbContext
+    public class FixieWebContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
@@ -14,7 +14,7 @@ namespace Fixie.Models
         // 
         // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Fixie.Models.FixieContext>());
 
-        public FixieContext() : base("name=FixieContext")
+        public FixieWebContext() : base("name=FixieWebContext")
         {
         }
 
@@ -22,6 +22,7 @@ namespace Fixie.Models
         public DbSet<Board> Boards { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Release> Releases { get; set; }
 
     }
 }

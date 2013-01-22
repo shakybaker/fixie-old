@@ -15,7 +15,6 @@ C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.d
 C:\Users\mark.baker\Documents\GitHub\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
 C:\dev\github\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.dll
 C:\dev\github\fixie\Fixie.Domain\bin\Debug\Fixie.Domain.pdb
-C:\dev\github\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.csprojResolveAssemblyReference.cache
 C:\dev\github\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.dll
 C:\dev\github\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.pdb
 C:\dev\github\fixie\Fixie.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.dll
@@ -34,3 +33,6 @@ C:\dev\github\fixie\Fixie.Domain\bin\Debug\StructureMap.xml
 C:\dev\github\fixie\Fixie.Domain\bin\Debug\System.Net.Http.Formatting.xml
 C:\dev\github\fixie\Fixie.Domain\bin\Debug\System.Web.Http.xml
 C:\dev\github\fixie\Fixie.Domain\bin\Debug\System.Web.Http.WebHost.xml
+C:\dev\github\fixie\Fixie.Domain\bin\Debug\DotNetOpenAuth.Core.dll
+C:\dev\github\fixie\Fixie.Domain\bin\Debug\DotNetOpenAuth.Core.xml
+C:\dev\github\fixie\Fixie.Domain\obj\Debug\Fixie.Domain.csprojResolveAssemblyReference.cache

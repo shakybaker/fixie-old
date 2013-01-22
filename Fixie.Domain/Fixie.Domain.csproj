@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNetOpenAuth.Core">
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
@@ -44,6 +47,7 @@
       <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
@@ -73,6 +77,8 @@
     <Compile Include="Comment.cs" />
     <Compile Include="ComplexityLevel.cs" />
     <Compile Include="ComplexityLevelTemplate.cs" />
+    <Compile Include="Enumerators\CardType.cs" />
+    <Compile Include="Release.cs" />
     <Compile Include="LaneTemplate.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />

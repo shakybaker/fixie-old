@@ -14,6 +14,7 @@ namespace Fixie.Domain
 
         public Card()
         {
+            Type = CardType.Feature;
             UserLinks = new List<UserLink>();
             Blockers = new List<Blocker>();
             Bugs = new List<Bug>();
@@ -31,6 +32,7 @@ namespace Fixie.Domain
 
         public string Name { get; set; }
         public string Description { get; set; }
+        public CardType Type { get; set; }
         public PriorityLevel Priority { get; set; }
         public ComplexityLevel Complexity { get; set; }
         public List<UserLink> UserLinks { get; set; }

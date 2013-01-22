@@ -11,7 +11,7 @@ namespace Fixie.Code.Repository
 {
     public class CardRepository : ICardRepository
     {
-        private FixieContext db = new FixieContext();
+        private FixieWebContext db = new FixieWebContext();
 
         public IEnumerable<Card> GetAll()
         {
