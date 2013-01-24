@@ -24,10 +24,11 @@
                 @Html.ValidationMessageFor(u => u.Password)
             </div>
             <div class="editor-label">
-                @Html.CheckBoxFor(u => u.RememberMe)
-                @Html.LabelFor(u => u.RememberMe)
+                <label class="checkbox">
+                    @Html.CheckBoxFor(u => u.RememberMe) Remember me
+                </label>
             </div>
-            <input type="submit" value="Log In" />
+            <button class="btn btn-large btn-primary" type="submit">Log in</button>
         </fieldset>
     </div>
 }
