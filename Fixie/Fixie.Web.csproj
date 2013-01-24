@@ -367,6 +367,7 @@
     <Content Include="Views\Releases\Details.cshtml" />
     <Content Include="Views\Releases\Index.cshtml" />
     <Content Include="Views\Releases\_CreateOrEdit.cshtml" />
+    <Content Include="Views\Shared\_BoardLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

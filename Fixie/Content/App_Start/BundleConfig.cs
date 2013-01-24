@@ -7,6 +7,7 @@ namespace Fixie.Content.App_Start
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+            //TODO: use minified versions of all scripts
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -40,8 +41,8 @@ namespace Fixie.Content.App_Start
 
             bundles.Add(new StyleBundle("~/Content/site").Include("~/Content/reset.css"));
             bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
-                "~/Content/bootstrap.min.css",
-                "~/Content/bootstrap-responsive.min.css"));
+                "~/Content/bootstrap.css",
+                "~/Content/bootstrap-responsive.css"));
             bundles.Add(new StyleBundle("~/Content/board").Include("~/Content/board.css"));
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.min.js"));
             bundles.Add(new ScriptBundle("~/bundles/site").Include(

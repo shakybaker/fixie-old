@@ -23,7 +23,33 @@
             @Html.ActionLink("Sign In", "Login", "User")
         }
     </div>*@
+    <div id="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity:  0.5; z-index: 200"></div>
+    <div id="modal-wrap" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent; z-index: 210; text-align: center;">
+        <div id="card-target" style="margin: 70px auto 0; width: 1000px; height: 100%; background-color: #fff; z-index: 220; text-align: left;"></div>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">Project name</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
     @RenderBody()
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
@@ -34,6 +60,15 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/site")
 
-    @RenderSection("Scripts", required: false)
+<script type="text/javascript">
+
+    $(function () {
+        fixie.init();
+    });
+
+</script>
+
+@RenderSection("Scripts", required: false)
+
 </body>
 </html>
