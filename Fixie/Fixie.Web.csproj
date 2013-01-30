@@ -191,33 +191,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Hubs\BoardHub.cs" />
-    <Compile Include="Migrations\201301180818276_Initial.cs" />
-    <Compile Include="Migrations\201301180818276_Initial.Designer.cs">
-      <DependentUpon>201301180818276_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301191439153_KeepInSync.cs" />
-    <Compile Include="Migrations\201301191439153_KeepInSync.Designer.cs">
-      <DependentUpon>201301191439153_KeepInSync.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301191459202_AddBoardSeed.cs" />
-    <Compile Include="Migrations\201301191459202_AddBoardSeed.Designer.cs">
-      <DependentUpon>201301191459202_AddBoardSeed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301191821140_AddUserDetails.cs" />
-    <Compile Include="Migrations\201301191821140_AddUserDetails.Designer.cs">
-      <DependentUpon>201301191821140_AddUserDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301200927503_ChangeUserName.cs" />
-    <Compile Include="Migrations\201301200927503_ChangeUserName.Designer.cs">
-      <DependentUpon>201301200927503_ChangeUserName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301200934149_AddProjects.cs" />
-    <Compile Include="Migrations\201301200934149_AddProjects.Designer.cs">
-      <DependentUpon>201301200934149_AddProjects.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301200944046_AddLaneTemplate.cs" />
-    <Compile Include="Migrations\201301200944046_AddLaneTemplate.Designer.cs">
-      <DependentUpon>201301200944046_AddLaneTemplate.cs</DependentUpon>
+    <Compile Include="Migrations\201301271549548_Initial.cs" />
+    <Compile Include="Migrations\201301271549548_Initial.Designer.cs">
+      <DependentUpon>201301271549548_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BoardViewModel.cs" />
@@ -231,6 +207,7 @@
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fixie.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\jquery.mCustomScrollbar.css" />
@@ -367,7 +344,7 @@
     <Content Include="Views\Releases\Details.cshtml" />
     <Content Include="Views\Releases\Index.cshtml" />
     <Content Include="Views\Releases\_CreateOrEdit.cshtml" />
-    <Content Include="Views\Shared\_BoardLayout.cshtml" />
+    <Content Include="Views\Board\_BoardLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -382,26 +359,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201301180818276_Initial.resx">
-      <DependentUpon>201301180818276_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301191439153_KeepInSync.resx">
-      <DependentUpon>201301191439153_KeepInSync.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301191459202_AddBoardSeed.resx">
-      <DependentUpon>201301191459202_AddBoardSeed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301191821140_AddUserDetails.resx">
-      <DependentUpon>201301191821140_AddUserDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301200927503_ChangeUserName.resx">
-      <DependentUpon>201301200927503_ChangeUserName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301200934149_AddProjects.resx">
-      <DependentUpon>201301200934149_AddProjects.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301200944046_AddLaneTemplate.resx">
-      <DependentUpon>201301200944046_AddLaneTemplate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201301271549548_Initial.resx">
+      <DependentUpon>201301271549548_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

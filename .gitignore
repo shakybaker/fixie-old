@@ -1,6 +1,8 @@
 _ReSharper.SilverWeb2010*
 obj/*
 bin/*
+*/obj/*
+*/bin/*
 Labels/*
 SilverWeb2010.suo
 SilverWeb2010.5.1.ReSharper.user

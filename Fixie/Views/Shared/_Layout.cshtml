@@ -9,12 +9,13 @@
     @Scripts.Render("~/bundles/modernizr")
     <style type="text/css">
         /* Overrides */
-        .container {
-            margin-top: 40px;
+        .main.container {
+            margin-top: 60px;
         }
     </style>
     <link href="~/Content/jquery.mCustomScrollbar.css" rel="stylesheet" />
     @RenderSection("Styles", required: false)
+    <link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -41,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Project name</a>
+                <a class="brand" href="#">fixie</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
@@ -53,7 +54,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="main container">
     @RenderBody()
     </div>
 
@@ -66,13 +67,13 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/site")
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-    $(function () {
-        fixie.init();
-    });
+        $(function () {
+            fixie.init();
+        });
 
-</script>
+    </script>
 
 @RenderSection("Scripts", required: false)
 
